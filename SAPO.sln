@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfSapoManager", "WcfSapoManager\WcfSapoManager.csproj", "{F14E1305-E380-49CB-9675-8CB21EC5402F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{CA211FDB-3D5C-4605-80E3-BF18BC1C3EB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consoles", "Consoles", "{23200087-0E6F-4C08-AD98-9BFF521607E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfSapoContributorService", "WcfSapoContributorService\WcfSapoContributorService.csproj", "{32055B52-F5AB-4613-AEAD-45BB4729707F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F14E1305-E380-49CB-9675-8CB21EC5402F} = {F14E1305-E380-49CB-9675-8CB21EC5402F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleContributor", "ConsoleContributor\ConsoleContributor.csproj", "{DC072527-62EB-42BF-B267-579E8CB4051F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{32055B52-F5AB-4613-AEAD-45BB4729707F} = {32055B52-F5AB-4613-AEAD-45BB4729707F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfSapoElectorService", "WcfElectorService\WcfSapoElectorService.csproj", "{0FBC6F80-9DF9-49A5-86F2-65B8671DB3ED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F14E1305-E380-49CB-9675-8CB21EC5402F} = {F14E1305-E380-49CB-9675-8CB21EC5402F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleElector", "ConsoleElector\ConsoleElector.csproj", "{13293014-7958-44D1-B002-3C964E28801E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0FBC6F80-9DF9-49A5-86F2-65B8671DB3ED} = {0FBC6F80-9DF9-49A5-86F2-65B8671DB3ED}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAdmin", "ConsoleAdmin\ConsoleAdmin.csproj", "{E41B1CB0-D414-4712-8F9C-F886FBDE664F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F14E1305-E380-49CB-9675-8CB21EC5402F} = {F14E1305-E380-49CB-9675-8CB21EC5402F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfSapoManagerLibrary", "WcfSapoManagerLibrary\WcfSapoManagerLibrary.csproj", "{0FA6C70E-7069-4230-BCC7-63A933168373}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F14E1305-E380-49CB-9675-8CB21EC5402F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14E1305-E380-49CB-9675-8CB21EC5402F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14E1305-E380-49CB-9675-8CB21EC5402F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14E1305-E380-49CB-9675-8CB21EC5402F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32055B52-F5AB-4613-AEAD-45BB4729707F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32055B52-F5AB-4613-AEAD-45BB4729707F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32055B52-F5AB-4613-AEAD-45BB4729707F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32055B52-F5AB-4613-AEAD-45BB4729707F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC072527-62EB-42BF-B267-579E8CB4051F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC072527-62EB-42BF-B267-579E8CB4051F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC072527-62EB-42BF-B267-579E8CB4051F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC072527-62EB-42BF-B267-579E8CB4051F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FBC6F80-9DF9-49A5-86F2-65B8671DB3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FBC6F80-9DF9-49A5-86F2-65B8671DB3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FBC6F80-9DF9-49A5-86F2-65B8671DB3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBC6F80-9DF9-49A5-86F2-65B8671DB3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13293014-7958-44D1-B002-3C964E28801E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13293014-7958-44D1-B002-3C964E28801E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13293014-7958-44D1-B002-3C964E28801E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13293014-7958-44D1-B002-3C964E28801E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41B1CB0-D414-4712-8F9C-F886FBDE664F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41B1CB0-D414-4712-8F9C-F886FBDE664F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41B1CB0-D414-4712-8F9C-F886FBDE664F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41B1CB0-D414-4712-8F9C-F886FBDE664F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FA6C70E-7069-4230-BCC7-63A933168373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA6C70E-7069-4230-BCC7-63A933168373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA6C70E-7069-4230-BCC7-63A933168373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA6C70E-7069-4230-BCC7-63A933168373}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F14E1305-E380-49CB-9675-8CB21EC5402F} = {CA211FDB-3D5C-4605-80E3-BF18BC1C3EB3}
+		{32055B52-F5AB-4613-AEAD-45BB4729707F} = {CA211FDB-3D5C-4605-80E3-BF18BC1C3EB3}
+		{DC072527-62EB-42BF-B267-579E8CB4051F} = {23200087-0E6F-4C08-AD98-9BFF521607E1}
+		{0FBC6F80-9DF9-49A5-86F2-65B8671DB3ED} = {CA211FDB-3D5C-4605-80E3-BF18BC1C3EB3}
+		{13293014-7958-44D1-B002-3C964E28801E} = {23200087-0E6F-4C08-AD98-9BFF521607E1}
+		{E41B1CB0-D414-4712-8F9C-F886FBDE664F} = {23200087-0E6F-4C08-AD98-9BFF521607E1}
+		{0FA6C70E-7069-4230-BCC7-63A933168373} = {CA211FDB-3D5C-4605-80E3-BF18BC1C3EB3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17E80664-FEAC-41A5-A2C4-A69177823213}
+	EndGlobalSection
+EndGlobal

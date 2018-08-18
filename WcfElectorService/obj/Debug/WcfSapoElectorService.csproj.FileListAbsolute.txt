@@ -1,0 +1,7 @@
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfElectorService\bin\WcfSapoElectorService.dll.config
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfElectorService\bin\WcfSapoElectorService.dll
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfElectorService\bin\WcfSapoElectorService.pdb
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfElectorService\obj\Debug\WcfSapoElectorService.csproj.CoreCompileInputs.cache
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfElectorService\obj\Debug\WcfSapoElectorService.dll
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfElectorService\obj\Debug\WcfSapoElectorService.pdb
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfElectorService\obj\Debug\WcfSapoElectorService.csprojResolveAssemblyReference.cache

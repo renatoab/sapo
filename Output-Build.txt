@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: ConsoleElector, Configuration: Debug Any CPU ------
+1>  ConsoleElector -> C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleElector\bin\Debug\ConsoleElector.exe
+========== Build: 1 succeeded, 0 failed, 6 up-to-date, 0 skipped ==========

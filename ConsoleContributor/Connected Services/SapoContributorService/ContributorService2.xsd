@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System.Collections.Generic" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59349/ContributorService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary" />
+  <xs:complexType name="QueueOfPoliticiandWt8xKhp">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="QueueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Politician" Namespace="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary" name="_array" nillable="true" type="q1:ArrayOfPolitician" />
+      <xs:element name="_head" type="xs:int" />
+      <xs:element name="_size" type="xs:int" />
+      <xs:element name="_tail" type="xs:int" />
+      <xs:element name="_version" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QueueOfPoliticiandWt8xKhp" nillable="true" type="tns:QueueOfPoliticiandWt8xKhp" />
+  <xs:complexType name="QueueOfProposaldWt8xKhp">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="QueueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Proposal" Namespace="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary" name="_array" nillable="true" type="q2:ArrayOfProposal" />
+      <xs:element name="_head" type="xs:int" />
+      <xs:element name="_size" type="xs:int" />
+      <xs:element name="_tail" type="xs:int" />
+      <xs:element name="_version" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QueueOfProposaldWt8xKhp" nillable="true" type="tns:QueueOfProposaldWt8xKhp" />
+</xs:schema>

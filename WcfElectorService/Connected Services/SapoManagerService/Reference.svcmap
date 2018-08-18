@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b677ef08-4cfc-440d-bde4-9bb39af8f4ec" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:54499/SapoManagerService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SapoManagerService4.xsd" MetadataType="Schema" ID="fd2023ad-42af-40a8-ab52-0a8540c6244b" SourceId="1" SourceUrl="http://localhost:54499/SapoManagerService.svc?xsd=xsd4" />
+    <MetadataFile FileName="SapoManagerService.wsdl" MetadataType="Wsdl" ID="a5c42f93-d813-41b2-9050-c3cd500f7987" SourceId="1" SourceUrl="http://localhost:54499/SapoManagerService.svc?wsdl" />
+    <MetadataFile FileName="SapoManagerService3.xsd" MetadataType="Schema" ID="d7f57b4e-bcd9-4d97-881a-79eade249645" SourceId="1" SourceUrl="http://localhost:54499/SapoManagerService.svc?xsd=xsd3" />
+    <MetadataFile FileName="SapoManagerService.xsd" MetadataType="Schema" ID="9324de97-8bbf-43f6-9350-2bc2a9f3c283" SourceId="1" SourceUrl="http://localhost:54499/SapoManagerService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SapoManagerService1.xsd" MetadataType="Schema" ID="388d5289-835d-4d6c-b7e0-18420ddf1746" SourceId="1" SourceUrl="http://localhost:54499/SapoManagerService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SapoManagerService.disco" MetadataType="Disco" ID="0165bf1c-f612-44cf-a6b9-9c8ffabc2fed" SourceId="1" SourceUrl="http://localhost:54499/SapoManagerService.svc?disco" />
+    <MetadataFile FileName="SapoManagerService2.xsd" MetadataType="Schema" ID="e92e198c-26ee-4b64-bde2-4f9e5c437fd5" SourceId="1" SourceUrl="http://localhost:54499/SapoManagerService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

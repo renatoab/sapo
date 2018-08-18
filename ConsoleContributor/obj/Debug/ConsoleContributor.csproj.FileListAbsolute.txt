@@ -1,0 +1,6 @@
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleContributor\bin\Debug\ConsoleContributor.exe.config
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleContributor\bin\Debug\ConsoleContributor.exe
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleContributor\bin\Debug\ConsoleContributor.pdb
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleContributor\obj\Debug\ConsoleContributor.csproj.CoreCompileInputs.cache
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleContributor\obj\Debug\ConsoleContributor.exe
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleContributor\obj\Debug\ConsoleContributor.pdb

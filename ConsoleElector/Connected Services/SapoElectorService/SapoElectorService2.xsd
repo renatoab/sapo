@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57993/SapoElectorService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfProposal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proposal" nillable="true" type="tns:Proposal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProposal" nillable="true" type="tns:ArrayOfProposal" />
+  <xs:complexType name="Proposal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Proposal" nillable="true" type="tns:Proposal" />
+  <xs:complexType name="ArrayOfPolitician">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Politician" nillable="true" type="tns:Politician" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPolitician" nillable="true" type="tns:ArrayOfPolitician" />
+  <xs:complexType name="Politician">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Party" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Score" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Politician" nillable="true" type="tns:Politician" />
+</xs:schema>

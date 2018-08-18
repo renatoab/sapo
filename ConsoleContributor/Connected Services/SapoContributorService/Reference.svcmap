@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5d33aa04-7c3d-4fcc-a0e4-5d14b2fc387b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59349/ContributorService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ContributorService.xsd" MetadataType="Schema" ID="66aa224a-e3be-44b5-99e7-b5443df35174" SourceId="1" SourceUrl="http://localhost:59349/ContributorService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ContributorService1.xsd" MetadataType="Schema" ID="a9d4fadf-6ddb-4fbd-b278-44cad13f50b3" SourceId="1" SourceUrl="http://localhost:59349/ContributorService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ContributorService2.xsd" MetadataType="Schema" ID="7ef99836-c870-4f3f-a56f-1893e887fdc8" SourceId="1" SourceUrl="http://localhost:59349/ContributorService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ContributorService21.xsd" MetadataType="Schema" ID="3416eb53-eb27-40ec-afc8-1bc0645b8c3f" SourceId="1" SourceUrl="http://localhost:59349/ContributorService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ContributorService.disco" MetadataType="Disco" ID="0423c2e8-8cd6-41ed-8f28-b9b48b8d6a77" SourceId="1" SourceUrl="http://localhost:59349/ContributorService.svc?disco" />
+    <MetadataFile FileName="ContributorService.wsdl" MetadataType="Wsdl" ID="cc3d78de-8a61-4d52-8963-d268b682c31b" SourceId="1" SourceUrl="http://localhost:59349/ContributorService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SapoManagerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:54499/SapoManagerService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:54499/SapoManagerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:54499/SapoManagerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary" />
+      <xsd:import schemaLocation="http://localhost:54499/SapoManagerService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary.Exception" />
+      <xsd:import schemaLocation="http://localhost:54499/SapoManagerService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPoliticianService_GeneratePolitician_InputMessage">
+    <wsdl:part name="parameters" element="tns:GeneratePolitician" />
+  </wsdl:message>
+  <wsdl:message name="IPoliticianService_GeneratePolitician_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GeneratePoliticianResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProposalService_GenerateProposal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateProposal" />
+  </wsdl:message>
+  <wsdl:message name="IProposalService_GenerateProposal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateProposalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPoliticianProposalService_GeneratePoliticianProposal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GeneratePoliticianProposal" />
+  </wsdl:message>
+  <wsdl:message name="IPoliticianProposalService_GeneratePoliticianProposal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GeneratePoliticianProposalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IElectorService_GenerateElector_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateElector" />
+  </wsdl:message>
+  <wsdl:message name="IElectorService_GenerateElector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateElectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IElectorService_GetElectorsNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetElectorsNumber" />
+  </wsdl:message>
+  <wsdl:message name="IElectorService_GetElectorsNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetElectorsNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IElectorProposalService_GenerateElectorProposal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateElectorProposal" />
+  </wsdl:message>
+  <wsdl:message name="IElectorProposalService_GenerateElectorProposal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateElectorProposalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SavePoliticians_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavePoliticians" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SavePoliticians_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavePoliticiansResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SavePoliticians_AutenticationExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary.Exception" name="detail" element="q1:AutenticationException" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SaveProposals_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveProposals" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SaveProposals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveProposalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SaveProposals_AutenticationExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary.Exception" name="detail" element="q2:AutenticationException" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SaveElectors_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveElectors" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SaveElectors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveElectorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SaveElectorProposals_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveElectorProposals" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SaveElectorProposals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveElectorProposalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SavePoliticianProposals_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavePoliticianProposals" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SavePoliticianProposals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavePoliticianProposalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_SavePoliticianProposals_AutenticationExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/WcfSapoManagerLibrary.Exception" name="detail" element="q3:AutenticationException" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_LoadProposals_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadProposals" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_LoadProposals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadProposalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_LoadPoliticians_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadPoliticians" />
+  </wsdl:message>
+  <wsdl:message name="IPersistService_LoadPoliticians_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadPoliticiansResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AutenticateContributor_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticateContributor" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AutenticateContributor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticateContributorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AddUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUser" />
+  </wsdl:message>
+  <wsdl:message name="IUserService_AddUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPoliticianService">
+    <wsdl:operation name="GeneratePolitician">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPoliticianService/GeneratePolitician" message="tns:IPoliticianService_GeneratePolitician_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPoliticianService/GeneratePoliticianResponse" message="tns:IPoliticianService_GeneratePolitician_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IProposalService">
+    <wsdl:operation name="GenerateProposal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProposalService/GenerateProposal" message="tns:IProposalService_GenerateProposal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProposalService/GenerateProposalResponse" message="tns:IProposalService_GenerateProposal_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IPoliticianProposalService">
+    <wsdl:operation name="GeneratePoliticianProposal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPoliticianProposalService/GeneratePoliticianProposal" message="tns:IPoliticianProposalService_GeneratePoliticianProposal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPoliticianProposalService/GeneratePoliticianProposalResponse" message="tns:IPoliticianProposalService_GeneratePoliticianProposal_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IElectorService">
+    <wsdl:operation name="GenerateElector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IElectorService/GenerateElector" message="tns:IElectorService_GenerateElector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IElectorService/GenerateElectorResponse" message="tns:IElectorService_GenerateElector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetElectorsNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IElectorService/GetElectorsNumber" message="tns:IElectorService_GetElectorsNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IElectorService/GetElectorsNumberResponse" message="tns:IElectorService_GetElectorsNumber_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IElectorProposalService">
+    <wsdl:operation name="GenerateElectorProposal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IElectorProposalService/GenerateElectorProposal" message="tns:IElectorProposalService_GenerateElectorProposal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IElectorProposalService/GenerateElectorProposalResponse" message="tns:IElectorProposalService_GenerateElectorProposal_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IPersistService">
+    <wsdl:operation name="SavePoliticians">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersistService/SavePoliticians" message="tns:IPersistService_SavePoliticians_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersistService/SavePoliticiansResponse" message="tns:IPersistService_SavePoliticians_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPersistService/SavePoliticiansAutenticationExceptionFault" name="AutenticationExceptionFault" message="tns:IPersistService_SavePoliticians_AutenticationExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProposals">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersistService/SaveProposals" message="tns:IPersistService_SaveProposals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersistService/SaveProposalsResponse" message="tns:IPersistService_SaveProposals_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPersistService/SaveProposalsAutenticationExceptionFault" name="AutenticationExceptionFault" message="tns:IPersistService_SaveProposals_AutenticationExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveElectors">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersistService/SaveElectors" message="tns:IPersistService_SaveElectors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersistService/SaveElectorsResponse" message="tns:IPersistService_SaveElectors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveElectorProposals">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersistService/SaveElectorProposals" message="tns:IPersistService_SaveElectorProposals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersistService/SaveElectorProposalsResponse" message="tns:IPersistService_SaveElectorProposals_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePoliticianProposals">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersistService/SavePoliticianProposals" message="tns:IPersistService_SavePoliticianProposals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersistService/SavePoliticianProposalsResponse" message="tns:IPersistService_SavePoliticianProposals_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPersistService/SavePoliticianProposalsAutenticationExceptionFault" name="AutenticationExceptionFault" message="tns:IPersistService_SavePoliticianProposals_AutenticationExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadProposals">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersistService/LoadProposals" message="tns:IPersistService_LoadProposals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersistService/LoadProposalsResponse" message="tns:IPersistService_LoadProposals_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadPoliticians">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPersistService/LoadPoliticians" message="tns:IPersistService_LoadPoliticians_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPersistService/LoadPoliticiansResponse" message="tns:IPersistService_LoadPoliticians_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IUserService">
+    <wsdl:operation name="AutenticateContributor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/AutenticateContributor" message="tns:IUserService_AutenticateContributor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/AutenticateContributorResponse" message="tns:IUserService_AutenticateContributor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserService/AddUser" message="tns:IUserService_AddUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserService/AddUserResponse" message="tns:IUserService_AddUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPoliticianService" type="tns:IPoliticianService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GeneratePolitician">
+      <soap:operation soapAction="http://tempuri.org/IPoliticianService/GeneratePolitician" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IProposalService" type="tns:IProposalService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerateProposal">
+      <soap:operation soapAction="http://tempuri.org/IProposalService/GenerateProposal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IPoliticianProposalService" type="tns:IPoliticianProposalService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GeneratePoliticianProposal">
+      <soap:operation soapAction="http://tempuri.org/IPoliticianProposalService/GeneratePoliticianProposal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IElectorService" type="tns:IElectorService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerateElector">
+      <soap:operation soapAction="http://tempuri.org/IElectorService/GenerateElector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetElectorsNumber">
+      <soap:operation soapAction="http://tempuri.org/IElectorService/GetElectorsNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IElectorProposalService" type="tns:IElectorProposalService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerateElectorProposal">
+      <soap:operation soapAction="http://tempuri.org/IElectorProposalService/GenerateElectorProposal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IPersistService" type="tns:IPersistService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SavePoliticians">
+      <soap:operation soapAction="http://tempuri.org/IPersistService/SavePoliticians" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AutenticationExceptionFault">
+        <soap:fault use="literal" name="AutenticationExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProposals">
+      <soap:operation soapAction="http://tempuri.org/IPersistService/SaveProposals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AutenticationExceptionFault">
+        <soap:fault use="literal" name="AutenticationExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveElectors">
+      <soap:operation soapAction="http://tempuri.org/IPersistService/SaveElectors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveElectorProposals">
+      <soap:operation soapAction="http://tempuri.org/IPersistService/SaveElectorProposals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePoliticianProposals">
+      <soap:operation soapAction="http://tempuri.org/IPersistService/SavePoliticianProposals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AutenticationExceptionFault">
+        <soap:fault use="literal" name="AutenticationExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="LoadProposals">
+      <soap:operation soapAction="http://tempuri.org/IPersistService/LoadProposals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadPoliticians">
+      <soap:operation soapAction="http://tempuri.org/IPersistService/LoadPoliticians" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IUserService" type="tns:IUserService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AutenticateContributor">
+      <soap:operation soapAction="http://tempuri.org/IUserService/AutenticateContributor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap:operation soapAction="http://tempuri.org/IUserService/AddUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SapoManagerService">
+    <wsdl:port name="BasicHttpBinding_IPoliticianService" binding="tns:BasicHttpBinding_IPoliticianService">
+      <soap:address location="http://localhost:54499/SapoManagerService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IProposalService" binding="tns:BasicHttpBinding_IProposalService">
+      <soap:address location="http://localhost:54499/SapoManagerService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IPoliticianProposalService" binding="tns:BasicHttpBinding_IPoliticianProposalService">
+      <soap:address location="http://localhost:54499/SapoManagerService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IElectorService" binding="tns:BasicHttpBinding_IElectorService">
+      <soap:address location="http://localhost:54499/SapoManagerService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IElectorProposalService" binding="tns:BasicHttpBinding_IElectorProposalService">
+      <soap:address location="http://localhost:54499/SapoManagerService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IPersistService" binding="tns:BasicHttpBinding_IPersistService">
+      <soap:address location="http://localhost:54499/SapoManagerService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IUserService" binding="tns:BasicHttpBinding_IUserService">
+      <soap:address location="http://localhost:54499/SapoManagerService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

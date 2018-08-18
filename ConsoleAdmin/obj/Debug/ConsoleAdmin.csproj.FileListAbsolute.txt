@@ -1,0 +1,7 @@
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleAdmin\bin\Debug\ConsoleAdmin.exe.config
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleAdmin\bin\Debug\ConsoleAdmin.exe
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleAdmin\bin\Debug\ConsoleAdmin.pdb
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleAdmin\obj\Debug\ConsoleAdmin.csproj.CoreCompileInputs.cache
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleAdmin\obj\Debug\ConsoleAdmin.exe
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleAdmin\obj\Debug\ConsoleAdmin.pdb
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\ConsoleAdmin\obj\Debug\ConsoleAdmin.csprojResolveAssemblyReference.cache

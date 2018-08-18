@@ -1,0 +1,6 @@
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\WcfSapoManagerLibrary\obj\Debug\WcfSapoModelLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\WcfSapoManagerLibrary\bin\Debug\WcfSapoModelLibrary.dll.config
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\WcfSapoManagerLibrary\bin\Debug\WcfSapoModelLibrary.dll
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\WcfSapoManagerLibrary\bin\Debug\WcfSapoModelLibrary.pdb
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\WcfSapoManagerLibrary\obj\Debug\WcfSapoModelLibrary.dll
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\WcfSapoManagerLibrary\obj\Debug\WcfSapoModelLibrary.pdb

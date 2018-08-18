@@ -1,0 +1,6 @@
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoContributorService\obj\Debug\WcfSapoContributorService.csproj.CoreCompileInputs.cache
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoContributorService\bin\WcfSapoContributorService.dll.config
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoContributorService\bin\WcfSapoContributorService.dll
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoContributorService\bin\WcfSapoContributorService.pdb
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoContributorService\obj\Debug\WcfSapoContributorService.dll
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoContributorService\obj\Debug\WcfSapoContributorService.pdb

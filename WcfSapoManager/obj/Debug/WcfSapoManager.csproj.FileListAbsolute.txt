@@ -1,0 +1,10 @@
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoManager\bin\WcfSapoManager.dll.config
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoManager\bin\WcfSapoManager.dll
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoManager\bin\WcfSapoManager.pdb
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoManager\obj\Debug\WcfSapoManager.csproj.CoreCompileInputs.cache
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoManager\obj\Debug\WcfSapoManager.dll
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoManager\obj\Debug\WcfSapoManager.pdb
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoManager\bin\WcfSapoManagerLibrary.dll
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoManager\bin\WcfSapoManagerLibrary.pdb
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoManager\bin\WcfSapoManagerLibrary.dll.config
+C:\Users\Renato\Google Drive\infnet\aulas_servicos\trabalho_servicos\SAPO\WcfSapoManager\obj\Debug\WcfSapoManager.csprojResolveAssemblyReference.cache

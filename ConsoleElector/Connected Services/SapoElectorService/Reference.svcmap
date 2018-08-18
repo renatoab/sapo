@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b514b04d-8dc7-4a20-9c88-12bfc07f16d6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57993/SapoElectorService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SapoElectorService.xsd" MetadataType="Schema" ID="d89da06c-d3e4-43af-8eda-4c039d0f41b8" SourceId="1" SourceUrl="http://localhost:57993/SapoElectorService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SapoElectorService1.xsd" MetadataType="Schema" ID="9965c969-605f-4489-8dd1-111010920f32" SourceId="1" SourceUrl="http://localhost:57993/SapoElectorService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SapoElectorService.wsdl" MetadataType="Wsdl" ID="8239210a-06b4-4c6c-b9bc-bf831ccf0858" SourceId="1" SourceUrl="http://localhost:57993/SapoElectorService.svc?wsdl" />
+    <MetadataFile FileName="SapoElectorService2.xsd" MetadataType="Schema" ID="4343ad96-762c-409a-acf7-6d3c99fbb876" SourceId="1" SourceUrl="http://localhost:57993/SapoElectorService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SapoElectorService.disco" MetadataType="Disco" ID="bb9df1d0-5d74-44af-a498-ceba84f56973" SourceId="1" SourceUrl="http://localhost:57993/SapoElectorService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
